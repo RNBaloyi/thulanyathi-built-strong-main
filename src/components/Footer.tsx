@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png"; // 👈 import logo from src/assets
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
             <div className="flex items-center gap-2 mb-4">
               <div className="flex items-center">
                 <img
-                  src="/logo.png" // replace with your actual logo path
+                  src={logo} // 👈 use imported logo
                   alt="Logo"
                   className="h-12 w-auto object-contain"
                 />

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png"; // 👈 import logo from src/assets
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -21,7 +22,7 @@ const Header = () => {
         <Link to="/" className="flex items-center gap-2">
           <div className="flex items-center">
             <img
-              src="/logo.png" // replace with your actual logo path
+              src={logo} // 👈 use imported logo
               alt="Logo"
               className="h-12 w-auto object-contain"
             />
